@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백석대 새내기 팁</title>
+
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            padding: 30px;
+        }
+
+        .images {
+            text-align: center;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        button {
+            margin-left: 95px;
+        }
+    </style>
+
+    <script>
+        function info1() {
+            var hac = new Object();
+            hac.b1 = "지하 1층 복사점";
+            hac.g1 = "1층 승차권 발매기(카드 전용), ATM기기 (신한, 국민)";
+            hac.eat = "지하 1층 밀겨울, 2층 세븐일레븐 편의점";
+            hac.info = function () {
+                alert(this.b1);
+                alert(this.g1);
+                alert(this.eat);
+            }
+            hac.info();
+        }
+
+        function info2() {
+            var jin = new Object();
+            jin.b1 = "지하 1층 셔틀버스용 승차권 발매기(현금전용)";
+            jin.g1 = "뷰리서점(교양책 전문), 신한은행, 여학생 회복실, 보건실, 서점(전공책 전문), 우채국, 안경점";
+            jin.eat = "지하 1층 CU편의점";
+            jin.info = function () {
+                alert(this.b1);
+                alert(this.g1);
+                alert(this.eat);
+            }
+            jin.info();
+        }
+
+        function info3() {
+            var bon = new Object();
+            bon.b1 = "지하 1층 자유열람실";
+            bon.g1 = "1층 학교생활상담센터, 창업카페, ATM기기 (신한, 국민, 농협)";
+            bon.g6 = "6층 복사점";
+            bon.eat = "지하 2층 오니기리와 규동, 6층 cu편의점"
+            bon.info = function () {
+                alert(this.b1);
+                alert(this.g1);
+                alert(this.g6);
+            }
+            bon.info();
+        }
+
+        function info4() {
+            var gi = new Object();
+            gi.g1 = "1층 당구장, 헬스장";
+            gi.g2 = "2층 EDIYA";
+            gi.info = function() {
+                alert(this.g1);
+                alert(this.g2);
+            }
+            gi.info();
+        }
+
+        function info5() {
+            var moc = new Object();
+            moc.b1 = "지하 1층 복사점";
+            moc.info = function() {
+                alert(this.b1);
+            }
+            moc.info();
+        }
+
+        function info6() {
+            var ye = new Object();
+            ye.g5 = "5층 카페테리아";
+            ye.info = function() {
+                alert(this.g5);
+            }
+            ye.info();
+        }
+
+        function info7() {
+            var jo = new Object();
+            jo.g1 = "1층 복사점, ATM기기(신한)";
+            jo.eat = "1층 CU편의점";
+            jo.info = function() {
+                alert(this.g1);
+                alert(this.eat);
+            }
+            jo.info();
+        }
+
+        function info8() {
+            var insung = new Object();
+            insung.g1 = "1층 복사점, ATM기기(신한)";
+            insung.info = function() {
+                alert(this.g1);
+            }
+            insung.info();
+        }
+        
+        function info9() {
+            var ja = new Object();
+            ja.b1 = "지하 1층 서점 & 문구점";
+            ja.g1 = "ATM기기 (신한, 국민)";
+            ja.eat = "지하 1층 세븐일레븐 편의점";
+            ja.info = function() {
+                alert(this.b1);
+                alert(this.g1);
+                alert(this.eat);
+            }
+            ja.info();
+        }
+
+        function info10() {
+            var chang = new Object();
+            chang.g1 = "1층 승차권 발매기(카드전용)";
+            chang.g2 = "2층 복사점, ATM기기 (농협)";
+            chang.eat = "8층 GS25 편의점"
+            chang.info = function() {
+                alert(this.g1);
+                alert(this.g2);
+                alert(this.eat);
+            }
+            chang.info();
+        }
+
+        function info11() {
+            alert("지혜관-3층 CU 편의점, 교수회관-학생식당, 도서관-1층 세븐일레븐 편의점")
+        }
+
+        function randomlunch() {
+            var han = ["삼겹살", "등갈비", "닭도리탕", "야채곱창", "찜닭", "순대국밥", "밥버거", "백반", "떡볶이", "칼국수", "김밥"];
+            var cha = ["자장면", "짬뽕", "마라탕"];
+            var japan = ["규동", "오니기리", "돈까스"];
+            var west = ["햄버거", "치킨", "토스트", "피자", "부리토"]
+            var com1 = Math.floor(Math.random()*4);
+                if (com1 == 0) {
+                    var com2 = Math.floor(Math.random()*11);
+                    alert("한식 어때요? 추천 음식 : " + han[com2]);
+                }
+                else if (com1 == 1) {
+                    var com2 = Math.floor(Math.random()*3);
+                    alert("중식 어때요? 추천 음식 : " + cha[com2]);
+                }
+                else if (com1 == 2) {
+                    var com2 = Math.floor(Math.random()*3);
+                    alert("일식 어때요? 추천 음식 : " + japan[com2]);
+                }
+                else if (com1== 3) {
+                    var com2 = Math.floor(Math.random()*5);
+                    alert("양식 어때요? 추천 음식 : " + west[com2]);
+                }
+            }
+
+    </script>
+</head>
+
+<body>
+    <div class="button1">
+        <h2>백석대 새내기 팁</h2>
+        <div>
+            <img src="image/주사위.jpg" alt="음식추천" width="220px">
+        </div>
+        <button onclick="randomlunch()">음식추천</button>
+    </div>
+
+    <div>
+        <h2>백석대 시설</h2>
+    </div>
+
+    <div class="images1">
+        <img src="image/학생복지관.jpg" alt="학생복지관" width="220px">
+        <img src="image/진리관.jpg" alt="진리관" width="220px">
+        <img src="image/본부동.jpg" alt="본부동" width="220px">
+        <img src="image/기숙사.jpg" alt="기숙사" width="220px">
+        <img src="image/목양관.jpg" alt="목양관" width="220px">
+    </div>
+
+    <div class="button2">
+        <button onclick="info1()">학생복지관</button>
+        <button onclick="info2()" style="margin-left: 210px;">진리관</button>
+        <button onclick="info3()" style="margin-left: 230px;">본부동</button>
+        <button onclick="info4()" style="margin-left: 220px;">기숙사</button>
+        <button onclick="info4()" style="margin-left: 230px;">목양관</button>
+    </div>
+    
+    <div class="images2">
+        <img src="image/예술대학동.jpg" alt="예술대학동" width="220px">
+        <img src="image/조형관.jpg" alt="조형관" width="220px">
+        <img src="image/인성관.jpg" alt="인성관" width="220px">
+        <img src="image/자유관.jpg" alt="자유관" width="220px">
+        <img src="image/창조관.jpg" alt="창조관" width="220px">
+    </div>
+
+    <div class="button3">
+        <button onclick="info6()">예술대학동</button>
+        <button onclick="info7()" style="margin-left: 210px;">조형관</button>
+        <button onclick="info8()" style="margin-left: 230px;">인성관</button>
+        <button onclick="info8()" style="margin-left: 220px;">자유관</button>
+        <button onclick="info10()" style="margin-left: 230px;">창조관</button>
+    </div>
+
+    <div class="image3">
+        <div>
+            <img src="image/지혜관.jpg" alt="예술대학동" width="220px">
+        </div>
+        <button onclick="info11()">기타시설</button>
+    </div>
+</body>
+</html>
